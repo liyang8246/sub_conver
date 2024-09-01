@@ -1,0 +1,17 @@
+[package]
+name = "sub_conver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15.0"
+nanoid = "0.4.0"
+reqwest = "0.12.7"
+salvo = {version = "0.71.1",features = ["serve-static","affix-state"]}
+serde = "1.0.209"
+serde_json = "1.0.127"
+serde_yaml = "0.9.34"
+sqlx = {version = "0.8.1",features = ["sqlite", "runtime-tokio","chrono"]}
+tokio = { version = "1", features = ["macros"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
